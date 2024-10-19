@@ -1,0 +1,35 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+
+  @media (min-width: 768px) {
+    .title {
+      font-size: 36px;
+    }
+  
+    .description {
+      font-size: 18px;
+    }
+  }
+  

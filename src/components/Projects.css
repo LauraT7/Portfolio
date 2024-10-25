@@ -1,0 +1,117 @@
+.projects-container {
+  background-color: #a19484;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.projects-container h1 {
+  font-size: 36px;
+  color: #001f3f;
+  margin-bottom: 20px;
+}
+
+.projects-container h2 {
+  font-size: 24px;
+  color: #001f3f;
+  margin-bottom: 40px;
+}
+
+.project {
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: transform 1s ease, box-shadow 0.3s ease;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+}
+
+.project h3 {
+  font-size: 22px;
+  color: #001f3f;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.project a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #001f3f;
+  text-decoration: none;
+  border-bottom: 2px solid #001f3f;
+  padding-bottom: 3px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.project a:hover {
+  color: #f5f5dc;
+  border-color: #f5f5dc;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .projects-container h1 {
+    font-size: 48px;
+}
+
+.projects-container h2 {
+    font-size: 32px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    gap: 20px; /* Espace entre les colonnes et les lignes */
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer la grille */
+}
+
+.project {
+    padding: 30px;
+    margin-bottom: 40px;
+    max-width: 100%; /* S'assurer que chaque projet prend toute la largeur de la colonne */
+}
+
+.project h3 {
+    font-size: 26px;
+}
+
+.project p {
+    font-size: 18px;
+}
+
+.project a {
+    font-size: 18px;
+}
+}

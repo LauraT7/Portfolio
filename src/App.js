@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
-import About from './components/About.js';
-import Contact from './components/Contact.js';
-import Projects from './components/Projects.js';
-import Home from './components/Home.js';
+import About from './components/About';
+import Contact from './components/Contact';
+import Projects from './components/Projects';
+import Home from './components/Home';
 import './App.css';
 
 function App() {
@@ -41,7 +41,6 @@ function App() {
             </>
           }
         />
-
         <Route path="/projects" element={<Projects />} />
       </Routes>
     </div>
@@ -50,7 +49,7 @@ function App() {
 
 export default function AppWrapper() {
   return (
-    <Router>
+    <Router basename="/Portfolio">
       <App />
     </Router>
   );
